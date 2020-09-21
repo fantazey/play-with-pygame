@@ -1,9 +1,7 @@
 import sys
-import random
 import pygame
 import pygame.locals as game_locals
 import pygame.event as game_event
-import pygame.time as game_time
 
 w_width = 600
 w_height = 650
@@ -99,7 +97,7 @@ for name, position in ANIMALS:
     BUTTONS.append({
         'image': pygame.image.load(build_image_path(name)),
         'position': position,
-        'sound': pygame.mixer.Sound(build_sound_path(name))
+        'sound': pygame.mixer.Sound(file=build_sound_path(name))
     })
 
 
