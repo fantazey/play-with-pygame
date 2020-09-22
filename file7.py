@@ -63,7 +63,7 @@ def handle_click():
 
         if is_inside(MOUSE_POSITION, button_position, button_size):
             button['sound'].set_volume(VOLUME)
-            button['sound'].play()
+            button['sound'].play(-1)
 
         stop_button_size = STOP_BUTTON['image'].get_rect().size
         if is_inside(MOUSE_POSITION, STOP_BUTTON['position'], stop_button_size):
